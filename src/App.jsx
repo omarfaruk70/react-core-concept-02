@@ -4,30 +4,26 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  // const [count, setCount] = useState(0)
+  function handleclick(){
+   console.log('Button clicked')
+  }
+  const handleclick2 = ()=> console.log('Button2 clicked');
+  const handleclick3=(num1)=>{
+    alert(num1 + 5)
+  }
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h3>React core concepts 02</h3>
+      <p>Differente way to Handle event in React</p>
+      <button onClick={handleclick}>Click me</button>
+      <button onClick={handleclick2}>Click me too</button>
+      {/* using a anonymous function on jsx */}
+      <button onClick={()=>{console.log('third button clicked')}}>Third click</button>
+      {/* using a function with parameters */}
+      {/* <button onClick={handleclick3(8)}>click me 4</button> .. */}
+      <button onClick={()=> handleclick3(10)}>click me 4</button>
+     
     </>
   )
 }
