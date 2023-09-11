@@ -6,6 +6,7 @@ import Counter from './countery'
 import Counter2 from './Counter2'
 import Team from './Team'
 import Users from './Users'
+import Friends from './Friends'
 
 function App() {
   // state change er jnnno destructuring way follow korte hobe
@@ -47,6 +48,8 @@ function App() {
       <Team></Team>
       {/* users from users.jsx */}
       <Users></Users>
+      {/* show the Friends component */}
+      <Friends></Friends>
     </>
   )
 }

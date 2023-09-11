@@ -3,7 +3,7 @@ import { useState } from "react"
 export default function Counter(){
     // const [previous value, have to updated value] = useState(initial value);
     const [count, setCount] = useState(0);
-    console.log(count, setCount);
+    // console.log(count, setCount);
     const handleAdd=()=>{
       let newCount = count + 1;
       setCount(newCount);
