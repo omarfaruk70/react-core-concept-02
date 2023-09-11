@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Counter from './countery'
 import Counter2 from './Counter2'
+import Team from './Team'
+import Users from './Users'
 
 function App() {
   // state change er jnnno destructuring way follow korte hobe
@@ -28,7 +30,7 @@ function App() {
     <>
       <h3>React core concepts 02</h3>
       <p>Differente way to Handle event in React</p>
-      <small>the core concept 2 is(event in jsx, State change in react)</small>
+      <small>the core concept 2 is(event in jsx, State change in react, useEffect with or without dependencies)</small>
       <br></br>
       <button onClick={handleclick}>Click me</button>
       <button onClick={handleclick2}>Click me too</button>
@@ -41,6 +43,10 @@ function App() {
       {/* using use State component which is named Counter.jsx */}
       <Counter></Counter>  
       <Counter2></Counter2>
+      {/* team state added from team.jsx */}
+      <Team></Team>
+      {/* users from users.jsx */}
+      <Users></Users>
     </>
   )
 }
